@@ -1,0 +1,29 @@
+# Camera ROI configuration file
+# Left camera related configuration: ROI top-left corner coordinates and corresponding width/height
+left_camera:
+    x: 300
+    y: 100
+    width: 340
+    height: 260
+
+# Right camera related configuration: ROI top-left corner coordinates and corresponding width/height
+right_camera:
+    x: 300
+    y: 100
+    width: 340
+    height: 260 
+
+# Front camera related configuration
+front_camera:
+    point1: [240,200] # Top-left corner
+    point2: [400,200] # Top-right corner
+    point3: [460,300] # Bottom-right corner
+    point4: [180,300] # Bottom-left corner
+
+# Rear camera related configuration
+back_camera:
+    point1: [200,160] # Top-left corner
+    point2: [440,160] # Top-right corner
+    point3: [460,176] # Bottom-right corner
+    point4: [180,176] # Bottom-left corner
+

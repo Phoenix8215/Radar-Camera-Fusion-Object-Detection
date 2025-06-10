@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package phoenix;
+
+import public "google/protobuf/timestamp.proto";
+
+message Object { 
+  google.protobuf.Timestamp timestamp = 1;
+  int32 id = 2;  
+  double x_dist = 3;
+  double y_dist = 4;
+  double x_vel = 5;
+  double y_vel = 6;
+  double width = 7;
+  double length = 8;
+  double theta = 9; //orientation angle
+  string label = 10;
+  double confidence = 11;
+}  
+  
+message Obj_list {
+  repeated Object object = 1;
+  string ver = 2;
+} 
